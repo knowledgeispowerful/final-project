@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Rentals</title>
+    <meta name="author" content="Scoot-rental page">
+    <meta name="description" content="Scoot-rental page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://knowledgeispowerful.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styless.css">
+    <link rel="stylesheet" href="styles/card.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="brand">~Scoots~</a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="rentals.html" class="menu-link">Rentals</a></li>
+                    <li class="menu-item"><a href="reservations.html" class="menu-link">Reservation</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+                   
+                </ul>
+            </div>
+            <button class="switch" id="switch">
+                <i class="bx bx-sun switch-light"></i>
+                <i class="bx bx-moon switch-dark"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="rental-services">
+            <h2>Rental Services and Agreements</h2>
+            <ol>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid driver’s license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ol>
+        </section>
+       
+
+
+        <section id="rental-options">
+          <h2>Available Rentals</h2>
+          <table id="rental-table">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Name</th>
+                <th>Capacity</th>
+                <th>Reservation Pricing (Half Day)</th>
+                <th>Reservation Pricing (Full Day)</th>
+                <th>Walk-In Pricing (Half Day)</th>
+                <th>Walk-In Pricing (Full Day)</th>
+              </tr>
+            </thead>
+            <tbody>
+                <div class="rental-table tbody"></div>
+            </tbody>
+          </table>
+        </section>
+   
+      
+       
+           
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Scoots. All Rights Reserved.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            
+            <div class="footer-social-media">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook</a>
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D">Twitter</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/links.js"></script>
+</body>
+</html>

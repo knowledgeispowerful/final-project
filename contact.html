@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Contact</title>
+    <meta name="author" content="Scoot-contact page">
+    <meta name="description" content="Scoot-contact page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://knowledgeispowerful.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styless.css">
+    <link rel="stylesheet" href="styles/card.css">
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="brand">~Scoots~</a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="rentals.html" class="menu-link">Rentals</a></li>
+                    <li class="menu-item"><a href="reservations.html" class="menu-link">Reservation</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+            <button class="switch" id="switch">
+                <i class="bx bx-sun switch-light"></i>
+                <i class="bx bx-moon switch-dark"></i>
+            </button>
+        </nav>
+    </header>
+   
+  <main class="contact-page">
+    <section id="contact-info">
+      <h2>Contact Information</h2>
+      <div class="contact-details">
+        <div class="contact-item">
+          <i class="fa fa-phone"></i>
+          <p><strong>Phone:</strong> +123 356 455</p>
+        </div>
+        <div class="contact-item">
+          <i class="fa fa-envelope"></i>
+          <p><strong>Email:</strong> contact@cozumel.com</p>
+        </div>
+        <div class="contact-item">
+          <i class="fa fa-map-marker-alt"></i>
+          <p><strong>Address:</strong> 123 Cozumel Ave, Cozumel, Mexico</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201209.67850672055!2d-87.05980776547403!3d20.43437865329831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sgh!4v1722285208040!5m2!1sen!2sgh" 
+                width="1300" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="contact-form">
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  
+ 
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Scoots. All Rights Reserved.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            
+            <div class="footer-social-media">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook</a>
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D">Twitter</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

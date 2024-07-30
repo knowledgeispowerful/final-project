@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Home</title>
+    <meta name="author" content="Scoot-home page">
+    <meta name="description" content="Scoot-home page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://knowledgeispowerful.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styless.css">
+    <link rel="stylesheet" href="styles/card.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="brand">~Scoots~</a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="rentals.html" class="menu-link">Rentals</a></li>
+                    <li class="menu-item"><a href="reservations.html" class="menu-link">Reservation</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+            <button class="switch" id="switch">
+                <i class="bx bx-sun switch-light"></i>
+                <i class="bx bx-moon switch-dark"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section banner">
+            <img class="banner-image" src="images/callofaction.png" alt="Illustration">
+            <div class="banner-content">
+                <div class="container banner-column">
+                    <h1 class="heading-xl">Explore Cozumel’s Coastal Beauty</h1>
+                    <p class="paragraph">
+                        Discover pristine beaches and vibrant marine life
+                    </p>
+                    <p>Cruise through charming streets and hidden spots</p>
+                    <p>Book now and ride into your tropical adventure</p>
+                    <button class="btn btn-darken btn-inline">
+                        Get Started<i class="bx bx-right-arrow-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+       
+        <section class="one">
+            <div class="head"> 
+                <h2>Our Types of Rentals</h2>
+            </div>
+            <section class="cards">
+                <article class="card card--1">
+                    <div class="card__clock">&#128337;</div>
+                    <div class="card__img card__img--1">
+                        <img src="images/image1.jpg" alt="Scooter" class="card__image"/>
+                    </div>
+                    <div class="card__info">
+                        <h3 class="card__title">Scooters</h3>
+                        <span class="card__category">$20 - $55</span>
+                        <h4 class="card__title">Scooters</h4>
+                    </div>
+                    <div class="container">
+                        <a href="rentals.html" class="btn-link">
+                            <p id="btnText">Choose plan</p>
+                        </a>    
+                    </div>
+                </article>
+        
+                <article class="card card--2">
+                    <div class="card__clock">&#128337;</div>
+                    <div class="card__img card__img--2">
+                        <img src="images/image2.jpg" alt="Jeep" class="card__image"/>
+                    </div>
+                    <div class="card__info">
+                        <h3 class="card__title">Jeep</h3>
+                        <span class="card__category">$60 - $90</span>
+                        <h4 class="card__title">Jeep</h4>
+                    </div>
+                    <div class="container">
+                        <a href="rentals.html" class="btn-link">
+                            <p id="btnText">Choose plan</p>
+                        </a>       
+                    </div>
+                </article>
+        
+                <article class="card card--3">
+                    <div class="card__clock">&#128337;</div>
+                    <div class="card__img card__img--3">
+                        <img src="images/image3.jpg" alt="ATV" class="card__image"/>
+                    </div>
+                    <div class="card__info">
+                        <h3 class="card__title">ATV</h3>
+                        <span class="card__category">$50 - $80</span>
+                        <h4 class="card__title">ATV</h4>
+                    </div>
+                    <div class="container">
+                        <a href="rentals.html" class="btn-link">
+                            <p id="btnText">Choose plan</p>
+                        </a>   
+                    </div>
+                </article>
+            </section>
+        </section>
+
+
+
+      
+        <div class="row">
+            <div class="column" style="background-color:#fdfdfd;">
+                <h3>Current Weather</h3>
+              <span id="current-weather-info"></span>
+                        <p>Temperature: <span id="current-temp"></span> °F</p>
+                        <p>Humidity: <span id="current-humidity"></span>%</p>
+                        <p>Main: <span id="current-main"></span></p>
+                        <p>Description: <span id="current-description"></span></p>
+                        <img id="current-icon" alt="Weather Icon">
+                      
+              <span id="forecast-weather-info"></span>
+                        <h3>Next Day's Forecast at 3:00 PM</h3>
+                        <p>Temperature: <span id="forecast-temp"></span> °F</p>
+                        <p>Main: <span id="forecast-main"></span></p>
+                        <p>Description: <span id="forecast-description"></span></p>
+                        <img id="forecast-icon" alt="Weather Icon">
+
+            </div>
+
+            <div class="column" style="background-color:#fdfdfd;">
+            <div class="map">  
+             
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201209.67850672055!2d-87.05980776547403!3d20.43437865329831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sgh!4v1722285208040!5m2!1sen!2sgh" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   
+                </section>
+            </div>
+        
+     </div>
+    
+</div>
+       
+           
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Scoots. All Rights Reserved.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            
+            <div class="footer-social-media">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook</a>
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D">Twitter</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
